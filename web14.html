@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alertButton();">Alert</button>
+    <button onclick="confirmButton();">Confirm</button>
+    <button onclick="promptButton();">Prompt</button>
+    <button onclick="nameDisplay();">Display full name</button>
+    <div class="Name"></div>
+</body>
+    <script>
+        function alertButton(){
+            alert("This is alert function");
+        }
+        function confirmButton(){
+            confirm("This is confirm function");
+        }
+        function promptButton(){
+            prompt("This is prompt function");
+        }
+        function nameDisplay(){
+            let fName='Utsarga';
+            let lName=' Manandhar';
+            let fullName=fName+lName;
+            document.querySelector('.Name').innerText=`${fullName}`;
+        }
+    </script>
+</html>
